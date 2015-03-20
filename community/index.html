@@ -4,20 +4,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>TransitNet</title>
-	<link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
-    <script src="js/jquery-1.10.2.js"></script>
-	<script src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+	<link rel="stylesheet" href="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
+    <script src="../js/jquery-1.10.2.js"></script>
+	<script src="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
 </head>
 
 <body>
-    <div data-role="page" id="reglamento">
+    <div data-role="page" id="principal">
         <div data-role="navbar">
             <ul>
-                <li><a href="#">Reglamento</a></li>
-                <li><a href="#">Multas</a></li>
-                <li><a href="#">Pago</a></li>
+                <li><a href="#principal">Reglamento</a></li>
+                <li><a href="#multas">Multas</a></li>
             </ul>
+            <br>
+        <input type="search" name="buscador">
+
         </div>
+        <div data-role="footer">
+    <h2>Cancun</h2>
     </div>
+
+    </div>    
+    <div data-role"page" id="multas">
+       <div data-role="navbar">
+            <ul>
+                <li><a href="#principal">Reglamento</a></li>
+                <li><a href="#multas">Multas</a></li>
+            </ul>
+        <center><h1>CLAVE</h1></center>
+        <input type="text" name="clave">
+        <input type="submit" value="Validar">
+        <div data-role="footer">
+    <h2>Cancun</h2>
+        </div>
+        </div> 
+    </div>
+    
+
 </body>
 </html> 

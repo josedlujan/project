@@ -11,33 +11,64 @@
 
 <body>
     <div data-role="page" id="principal">
-        <div data-role="navbar">
+        <div data-role="navbar" >
             <ul>
                 <li><a href="#principal">Reglamento</a></li>
-                <li><a href="#multas">Multas</a></li>
+                <li><a href="#multas" data-transition="slidedown">Multas</a></li>
             </ul>
             <br>
         <input type="search" name="buscador">
-
         </div>
-        <div data-role="footer">
+        <div data-role="footer" data-position="fixed" >
     <h2>Cancun</h2>
     </div>
-
     </div>    
-    <div data-role"page" id="multas">
-       <div data-role="navbar">
+    <div data-role"page" id="multas" >
+        <div data-role="navbar">
             <ul>
-                <li><a href="#principal">Reglamento</a></li>
-                <li><a href="#multas">Multas</a></li>
+                <li><a href="#principal"data-transition="slidedown">Reglamento</a></li>
+                <li><a href="#multas"data-transition="slidedown">Multas</a></li>
             </ul>
-        <center><h1>CLAVE</h1></center>
-        <input type="text" name="clave">
-        <input type="submit" value="Validar">
-        <div data-role="footer">
-    <h2>Cancun</h2>
+             </div>
+            <br><br>
+       
+            <div data-role="content">
+                    <center><h3>CLAVE</h13></center>
+                    <input type="text" name="clave" data-clear-btn="true" autocomplete="off">
+                    <a href="#datos" data-transition="slidedown"> Validar</a>
+            </div>
+
+         <div data-role="footer" data-position="fixed"  data-theme="b">
+        <h2>Cancun</h2>
         </div>
-        </div> 
+        
+        
+    </div>
+
+    <div data-role="page" id="datos">
+
+        <div data-role="header">
+           <h1>TransitNet</h1>
+           </div>
+           <br>
+
+        <input type="text" name="nombre">
+        <input type="text" name="nombre">
+        <input type="text" name="nombre">
+        <input type="text" name="nombre">
+        <input type="text" name="nombre">
+        <input type="text" name="nombre">
+        <input type="text" name="nombre">
+        <input type="text" name="nombre">
+        <input type="text" name="nombre">
+
+        <input type="submit" value="Pagar" name="pagar">
+        <input type="submit" value="Print" name="print">  
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h2>CANCUN</h2>
+        </div>
+
     </div>
     
 

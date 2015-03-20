@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+img{
+	display:block;
+	margin:auto;
+}
+[data-role="content"]{
+	color:#0080FF;
+	font-weight:bold;
+	}

@@ -9,3 +9,8 @@ img{
 	color:#0080FF;
 	font-weight:bold;
 	}
+
+label {
+  font-weight: bold !important;
+  color: #000;
+}
